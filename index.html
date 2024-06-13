@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+              background-color: lightblue;
+            }
+            
+            p {
+             
+                color: rgb(0, 255, 255);
+                background-color: blueviolet;
+                box-shadow: 5px 5px 5px lightgreen;
+              text-align: left;
+              font-family: 'Times New Roman', Times, serif;
+              width: 60vw;
+              font-size: 20px;
+
+            }
+            a {
+             
+             color: rgb(255, 153, 0);
+             background-color: blueviolet;
+           text-align: left;
+           font-family: 'Times New Roman', Times, serif;
+           width: fit-content;
+           font-size: 20px;
+         }
+        
+        #wizard {
+            width: 50px;
+            height: 50px;
+            top: 100px;
+            position: absolute;
+        }
+
+        .img1 {
+          width: 400px;
+          height: 250px;
+          left: 1200px; 
+          bottom: 55vh; 
+          position: absolute;
+        }
+
+        .img2 {
+          width: 400px;
+          height: 250px;
+          left: 1200px; 
+          bottom: 25vh; 
+          position: absolute;
+        }
+
+            </style>
+    </head>
+<body> 
+  <h1>The Official KanYe West Website</h1>
+
+  <div class="container">
+    <img id="wizard" src="kanyecut.png" onclick="teleport()">
+   </div>
+
+  <button type="button" onclick="alert('Whats Up Homie?')">To get a notification from KanYe</button>
+
+  <label for="fname">Your name</label>
+  <input type="text" id="fname" name="fname">
+  <button type="button" onclick="sayhi()">Send</button>
+
+  <h1>Kanye West </h1>
+  <p>Kanye Omari West born on June 8, 1977 in Atlanta, Georgia. West was raised in a middle-class environment. At the age of 10, West moved with his mother to Nanjing, China for one year then returned back to Chicago.
+    After graduating from high school, West received a scholarship to attend Chicago's American Academy of Art in 1997 and began taking painting classes. 
+    At age 20, he dropped out to pursue his musical career.
+    <br><br>
+    Kanye got into a car accident in 2002, which shattered his jaw, which inspired West and two weeks after being admitted to the hospital, he recorded "Through the Wire" at the Record Plant Studios with his jaw still wired shut.
+    <br><br>
+    The song was first included on West's debut mixtape Get Well Soon..., which was released in December 2002.
+<br><br>
+     At the same time, West announced that he was working on an album titled "The College Dropout".
+<br><br>
+     The albums overall theme was to "make your own decisions. Don't let society tell you, 'This is what you have to do.'
+<br><br>
+
+   Now Kanye West is a very popular American rapper, singer, songwriter, record producer, and fashion designer.
+<br><br>
+    West is a significant figure in contemporary pop culture.
+<br><br>
+    West's Discography is one of  if not the best of all time with albums like: The College Dropout (2004), Late Registration (2005), Graduation (2007), My Beautiful Dark Twisted Fantasy (2010), ect.  
+    <br><br>
+    Time named him one of the 100 most influential people in the world in 2005 and 2015.
+    <br><br>
+    Kanye is One of the world's best-selling music artists with 160 million records sold, West has won 24 Grammy Awards.
+  </p>
+
+  <img src="https://images-prod.dazeddigital.com/750/azure/dazed-prod/1170/3/1173391.jpg" class="img1"> 
+  <br><br>
+  <img src="data:image/jpeg;base64,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" class="img2">
+  <button onclick="ToggleLight()"> click switch </button>
+
+
+  <a href="https://yeezy.com/">To Yeezy.com</a>
+  <br><br>
+  <a href="https://www.youtube.com/channel/UCs6eXM7s8Vl5WcECcRHc2qQ">To Kanye's music</a>
+<br><br><br><br><br>
+  <p>My Top 10 Best Kanye Songs of All Time:
+<br><br>
+1. <a href="https://www.youtube.com/watch?v=uvb-1wjAtk4">Through The Wire</a>
+<br><br>
+2. <a href="https://www.youtube.com/watch?v=pwkYUhePecQ&list=OLAK5uy_l139P2p521JCZVZX8S_PuGFUKyD1brXWY&index=12">Slow Jamz</a>
+<br><br>
+3. <a href="https://www.youtube.com/watch?v=JwAjANmjajc">Family Business</a>
+<br><br>
+4. <a href="https://www.youtube.com/watch?v=sk3rpYkiHe8&list=OLAK5uy_mRFuqe0IIrexXkU7JOxo4rOb0WLEcwuz8&index=8">Devil In A New Dress
+</a>
+<br><br>
+5. <a href="https://www.youtube.com/watch?v=w9rzz4pDFwA&list=OLAK5uy_keyJA-JsoAdfCylvyyIQMRjenzX6MzmnE&index=20">Saint Pablo</a>
+<br><br>
+6. <a href="https://www.youtube.com/watch?v=_fr4SV4fGAw&list=OLAK5uy_mS2sPIJinRK2fIXN9Ce756lZFRX2KT21o&index=14">We Major</a>
+<br><br>
+7. <a href="https://www.youtube.com/watch?v=NnMuFqsmYSE&list=OLAK5uy_keyJA-JsoAdfCylvyyIQMRjenzX6MzmnE&index=17">No More Parties In LA
+</a>
+<br><br>
+8. <a href="https://www.youtube.com/watch?v=OH3bNgA1rkE&list=OLAK5uy_keyJA-JsoAdfCylvyyIQMRjenzX6MzmnE&index=16">30 Hours</a>
+<br><br>
+9. <a href="https://www.youtube.com/watch?v=qAsHVwl-MU4">Ghost Town</a>
+<br><br>
+10. <a href="https://www.youtube.com/watch?v=w2Yh9sxfTd8">All Of The Lights</a>
+<br><br>
+
+
+
+
+
+
+
+
+
+ </p>
+</body>
+<script>
+  function sayhi() {
+    const name = document.getElementById("fname").value;
+  
+    alert("Hey There " + name + ", Thank you for visiting the site!")
+  }
+      
+  const maxHeight = window.innerHeight - 150;
+  const maxWidth = window.innerWidth - 150;
+
+  function teleport() {
+      const wizard = document.getElementById("wizard");
+
+      const randomTopPosition = Math.floor(Math.random() * maxHeight);
+      const randomLeftPosition = Math.floor(Math.random() * maxWidth);
+
+      wizard.style.top = randomTopPosition + 'px';
+      wizard.style.left = randomLeftPosition + 'px';
+  }
+
+            function ToggleLight() {
+                const imgTag = document.getElementById('');
+                const imgSrc = imgTag.src; 
+
+                if(imgSrc.includes('off')) {
+                imgTag.src = 'https://i.imgflip.com/41j06n.png?a477168';
+                } else {
+                    imgTag.src = 'img1';
+                }
+
+            }
+   
+  
+</script>
+</html>
